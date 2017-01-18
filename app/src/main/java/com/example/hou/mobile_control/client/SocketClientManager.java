@@ -3,7 +3,6 @@ package com.example.hou.mobile_control.client;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -27,6 +26,7 @@ public class SocketClientManager {
     private int port = 0;
     public boolean isStop = false;
     private SocketClientCallBack callBack;
+    private int a = 0;
     public synchronized static SocketClientManager getInstance() {
         if (instance == null) {
             instance = new SocketClientManager();
